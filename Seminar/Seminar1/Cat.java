@@ -1,30 +1,37 @@
 import java.util.Arrays;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
-    public Cat(String color, String species, Integer legsCount) {
+    public Cat(String color, String species, int legsCount) {
         super(color, species, legsCount);
         //TODO Auto-generated constructor stub
     }
-    private void FIndFood() {
-        System.out.println("Cat found food ");
+    
+    private void FindFood(){
+        System.out.println("Cat find food");
     }
-    private void FIndFood(int ... args) {
-        System.out.println("Cat found food, count = " + Arrays.toString(args));
+
+    private void FindFood(Integer ... args){
+        System.out.println("Cat find food, count = "+ Arrays.toString(args));
     }
-    private void WakeUp() {
-        System.out.println("Cat woke up ");
+
+    private void WakeUp(){
+        System.out.println("Cat wake up!");
     }
-    private void Sleep() {
-        System.out.println("Cat sleeps ");
+
+    private void Sleep(){
+        System.out.println("Cat slep!");
     }
-    private void Eat() {
-        System.out.println("Cat ate ");
+
+    private void Eat(){
+        System.out.println("Cat eat!");
     }
-    public void Hunt(int ... args) {
+
+    public void Hunt(Integer ... args){
         WakeUp();
-        FIndFood(args);
+        FindFood(args);
         Eat();
         Sleep();
     }
 }
+ 

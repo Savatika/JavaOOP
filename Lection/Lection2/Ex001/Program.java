@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import Lesson_08.Ex001.Druid;
+import Lection2.Ex001.Druid;
 
 public class Program {
     public static void main(String[] args) {

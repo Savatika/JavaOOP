@@ -41,7 +41,7 @@ public class Point2D {
     }
 
     
-    private String getInfo(){
+    public String getInfo(){
         return String.format("x: %d; y: %d", x, y);
     }
     @Override

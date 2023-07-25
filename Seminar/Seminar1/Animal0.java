@@ -1,24 +1,24 @@
-public class Animal0 extends Animal {
-    private Integer eyesCount;
-    public Animal0(String name, Integer age, String vaccination, String color, String species, Owner owner,
-            Integer legsCount) {
+public class Animal0 extends Animal{
+    private int eyesCount;
+
+    public Animal0(String name, int age, String vaccination, String color, String species, Owner owner,
+            int legsCount, int eyesCount) {
         super(name, age, vaccination, color, species, owner, legsCount);
-        this.eyesCount = 2;
+        this.eyesCount = eyesCount;
     }
-    public  Animal0() {
-        this(null, null, null, null, null, null, null);
+
+    public Animal0() {
+        this(null,0, null, null, null, null, 0, 0);
     }
-    @Override
-    public Integer getAge() {
-        // TODO Auto-generated method stub
-        return super.getAge();
-    }
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return "I'm animal0 ";
-    }
-    public Integer getEyesCount() {
+
+    // @Override
+    // public String toString() {
+        
+    //     return"I'm Animal0";
+    // }
+
+    public int getEyesCount() {
         return eyesCount;
     }
+    
 }

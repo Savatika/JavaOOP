@@ -11,7 +11,7 @@ public class Program {
 
     public static void main(String[] args) {
         Point2D a = new Point2D();
-        a.x = 0;
+        a.x = 4;
         a.y = 2;
         System.out.println(a.toString());
 
